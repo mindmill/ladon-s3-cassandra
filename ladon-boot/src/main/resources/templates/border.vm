@@ -128,7 +128,7 @@
 <script src="assets/morris/morris.js"></script>
 
 <!-- DATA TABLE SCRIPTS -->
-<script src="assets/dataTables/jquery.dataTables.js"></script>
+<script src="assets/dataTables/jquery.dataTables.min.js"></script>
 <script src="assets/dataTables/dataTables.bootstrap.js"></script>
 
 

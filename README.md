@@ -7,8 +7,11 @@
  mvn package && java -jar target/ladon_se_1.4.1.jar 
  ```
 
+### Login
+
+Navigate your browser to  [http://localhost:8080/admin/overview](http://localhost:8080/admin/overview)
  
- 
+ Username: admin, password: admin123
 
 ### License
 Copyright (C) 2017 Mind Consulting

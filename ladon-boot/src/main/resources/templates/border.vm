@@ -15,13 +15,8 @@
     <link href="assets/dataTables/dataTables.bootstrap.css" rel="stylesheet"/>
     <link href="assets/morris/morris-0.4.3.min.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="/assets/favicon.ico"/>
-##    <link rel="stylesheet" href="../../assets/treegrid/jquery.treegrid.css"/>
     <!-- Custom Styles-->
     <link href="assets/css/custom-styles.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/prettify.css">
-    <link rel="stylesheet" href="assets/codemirror/codemirror.css">
-    <link rel="stylesheet" href="assets/codemirror/fullscreen.css">
-    <link rel="stylesheet" href="assets/nestedlists/style.css">
 ##    <!-- Google Fonts-->
 ##    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 </head>
@@ -120,7 +115,10 @@
 <!-- /. WRAPPER  -->
 <!-- JS Scripts-->
 <!-- jQuery Js -->
-<script src="assets/js/jquery-1.10.2.js"></script>
+<script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
 <!-- Bootstrap Js -->
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- Metis Menu Js -->
@@ -133,18 +131,6 @@
 <script src="assets/dataTables/jquery.dataTables.js"></script>
 <script src="assets/dataTables/dataTables.bootstrap.js"></script>
 
-<!-- TREE TABLE-->
-
-##<script type="text/javascript" src="../assets/treegrid/jquery.treegrid.js"></script>
-##<script type="text/javascript" src="../assets/treegrid/jquery.treegrid.bootstrap3.js"></script>
-
-<!-- gauges -->
-<script type="text/javascript" src="assets/justgage/js/justgage.1.0.1.min.js"></script>
-
-<script src="assets/js/prettify/prettify.js"></script>
-<script src="assets/codemirror/codemirror.js"></script>
-<script src="assets/codemirror/xml.js"></script>
-<script src="assets/codemirror/fullscreen.js"></script>
 
 <!-- Custom Js -->
 <script src="assets/js/custom-scripts.js"></script>

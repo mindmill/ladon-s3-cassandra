@@ -4,7 +4,7 @@
  ### Installation:
  The Ladon S3 Cassandra is built using Java 8 , Kotlin and Maven
  ```bash
- mvn package && java -jar ladon-boot/target/ladon_se_1.4.1.jar 
+ mvn package && java -jar target/ladon_se_1.4.1.jar 
  ```
 
  

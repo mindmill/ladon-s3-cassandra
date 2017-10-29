@@ -7,7 +7,10 @@
  ```bash
  mvn package && java -jar target/ladon_se_1.4.1.jar 
  ```
-hint: please make sure you did install Ladon S3 Server first, since this project depends on it
+please make sure you did install Ladon S3 Server first, since this project depends on it
+```bash
+sh ./install-dependencies.sh
+```
 [https://github.com/mindmill/ladon-s3-server](https://github.com/mindmill/ladon-s3-server)
 ### Login
 

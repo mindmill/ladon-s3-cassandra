@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header">
+            <i class="fa fa-database"></i> Cassandra
+            <small> $clustername</small>
+        </h1>
+    </div>
+</div>
+
+
+<div class="row">
+    #foreach($host in $hosts )
+    <div class="col-md-4">
+        <!--    Hover Rows  -->
+        #if($host.isUp())
+        <div class="panel panel-primary">
+        #else
+        <div class="panel panel-danger">
+        #end
+        <div class="panel-heading">
+            <i class="fa fa-server"></i> Node $velocityCount
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive table-scrollable">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>$host.getSocketAddress()</th>
+                        #if($host.isUp())
+                            <th>UP</th>
+                        #else
+                            <th>DOWN</th>
+                        #end
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Datacenter</td>
+                        <td>$host.getDatacenter()</td>
+                    </tr>
+                    <tr>
+                        <td>Rack</td>
+                        <td>$host.getRack()</td>
+                    </tr>
+                    <tr>
+                        <td>ReleaseVersion</td>
+                        <td>$host.getCassandraVersion()</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <!-- End  Hover Rows  -->
+    </div>
+    #end
+
+
+</div>
+##    <div class="col-md-4">
+##        <div>
+##            <form role="form" action="cassandra/migrateschema" method="get">
+##
+##                    <span class="input-group-btn">
+##                            <button class="btn btn-default" type="submit">
+##                                Migrate Schema to V2
+##                            </button>
+##                    </span>
+##        </div>
+##        </form>
+##    </div>
+</div>
+</div>
+
+

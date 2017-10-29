@@ -1,4 +1,5 @@
- # Ladon S3 Cassandra  #
+[![Build Status](https://travis-ci.org/mindmill/ladon-s3-cassandra.svg?branch=master)](https://travis-ci.org/mindmill/ladon-s3-cassandra)
+# Ladon S3 Cassandra  #
  
  
  ### Installation:

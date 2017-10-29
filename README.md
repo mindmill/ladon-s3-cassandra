@@ -6,7 +6,8 @@
  ```bash
  mvn package && java -jar target/ladon_se_1.4.1.jar 
  ```
-
+hint: please make sure you did install Ladon S3 Server first, since this project depends on it
+[https://github.com/mindmill/ladon-s3-server](https://github.com/mindmill/ladon-s3-server)
 ### Login
 
 Navigate your browser to  [http://localhost:8080/admin/overview](http://localhost:8080/admin/overview)

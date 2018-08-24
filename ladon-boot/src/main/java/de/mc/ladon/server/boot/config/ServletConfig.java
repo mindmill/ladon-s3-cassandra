@@ -8,6 +8,7 @@ import de.mc.ladon.s3server.logging.PerformanceLoggingFilter;
 import de.mc.ladon.s3server.repository.api.S3Repository;
 import de.mc.ladon.s3server.servlet.S3Servlet;
 import de.mc.ladon.server.s3.LadonS3Config;
+import org.apache.catalina.filters.CorsFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration;
@@ -68,6 +69,15 @@ public class ServletConfig {
     FilterRegistrationBean filterRegistrationBean() {
         FilterRegistrationBean filterBean = new FilterRegistrationBean();
         filterBean.setFilter(new PerformanceLoggingFilter());
+        filterBean.addServletNames("s3servlet");
+        filterBean.setAsyncSupported(true);
+        return filterBean;
+    }
+
+    @Bean
+    FilterRegistrationBean corsFilterRegistrationBean() {
+        FilterRegistrationBean filterBean = new FilterRegistrationBean();
+        filterBean.setFilter(new CorsFilter());
         filterBean.addServletNames("s3servlet");
         filterBean.setAsyncSupported(true);
         return filterBean;

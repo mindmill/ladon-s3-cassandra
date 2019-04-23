@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/mindmill/ladon-s3-cassandra.svg?branch=master)](https://travis-ci.org/mindmill/ladon-s3-cassandra)
 # Ladon S3 Cassandra  #
- 
+*this project is no longer under active development, have a look at its successor: https://github.com/mindmill/ladon-data-center-edition*
  
  ### Installation:
  The Ladon S3 Cassandra is built using Java 8 , Kotlin and Maven
